@@ -88,8 +88,6 @@ useCard = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 global prevBtn;
 global prevhObject;
-global correctCnt;
-correctCnt = 0;
 
 % UIWAIT makes Easy wait for user response (see UIRESUME)
 % uiwait(handles.figure1);
@@ -111,142 +109,134 @@ function pushbutton1_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton1 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(1, hObject);
-pressAdd(handles);
+pressBtn(1, hObject, handles);
 
 % --- Executes on button press in pushbutton2.
 function pushbutton2_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton2 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(2, hObject);
-pressAdd(handles);
+pressBtn(2, hObject, handles);
 
 % --- Executes on button press in pushbutton3.
 function pushbutton3_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton3 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(3, hObject);
-pressAdd(handles);
+pressBtn(3, hObject, handles);
 
 % --- Executes on button press in pushbutton4.
 function pushbutton4_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton4 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(4, hObject);
-pressAdd(handles);
+pressBtn(4, hObject, handles);
 
 % --- Executes on button press in pushbutton5.
 function pushbutton5_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton5 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(5, hObject);
-pressAdd(handles);
+pressBtn(5, hObject, handles);
 
 % --- Executes on button press in pushbutton6.
 function pushbutton6_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton6 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(6, hObject);
-pressAdd(handles);
+pressBtn(6, hObject, handles);
 
 % --- Executes on button press in pushbutton7.
 function pushbutton7_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton7 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(7, hObject);
-pressAdd(handles);
+pressBtn(7, hObject, handles);
 
 % --- Executes on button press in pushbutton8.
 function pushbutton8_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton8 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(8, hObject);
-pressAdd(handles);
+pressBtn(8, hObject, handles);
 
 % --- Executes on button press in pushbutton9.
 function pushbutton9_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton9 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(9, hObject);
-pressAdd(handles);
+pressBtn(9, hObject, handles);
 
 % --- Executes on button press in pushbutton10.
 function pushbutton10_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton10 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(10, hObject);
-pressAdd(handles);
+pressBtn(10, hObject, handles);
 
 % --- Executes on button press in pushbutton11.
 function pushbutton11_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton11 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(11, hObject);
-pressAdd(handles);
+pressBtn(11, hObject, handles);
 
 % --- Executes on button press in pushbutton12.
 function pushbutton12_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton12 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(12, hObject);
-pressAdd(handles);
+pressBtn(12, hObject, handles);
 
 % --- Executes on button press in pushbutton13.
 function pushbutton13_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton13 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(13, hObject);
-pressAdd(handles);
+pressBtn(13, hObject, handles);
 
 % --- Executes on button press in pushbutton14.
 function pushbutton14_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton14 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(14, hObject);
-pressAdd(handles);
+pressBtn(14, hObject, handles);
 
 % --- Executes on button press in pushbutton15.
 function pushbutton15_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton15 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(15, hObject);
-pressAdd(handles);
+pressBtn(15, hObject, handles);
 
 % --- Executes on button press in pushbutton16.
 function pushbutton16_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton16 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-pressBtn(16, hObject);
-pressAdd(handles);
+pressBtn(16, hObject, handles);
 
 % Press Addup
 function pressAdd(handles)
 v = str2num(get(handles.text3, 'String'));
 set(handles.text3, 'String', v+1);
 
+% Score Addup
+function scoreAdd(handles)
+v = str2num(get(handles.text4, 'String'));
+set(handles.text4, 'String', v+1);
+if v+1==8
+    set(handles.text5, 'String', 'Ya');
+end
+
 % Press Button
-function pressBtn(btn, hObject)
+function pressBtn(btn, hObject, handles)
 global isFirst;
 global useCard;
 global prevBtn;
 global prevhObject;
-global correctCnt;
 global puzzleAns;
+pressAdd(handles);
 
 if useCard(btn)==0
     toggleCard(btn, hObject);
@@ -256,7 +246,7 @@ if useCard(btn)==0
         prevhObject = hObject;
     else
         if puzzleAns(btn)==puzzleAns(prevBtn)
-            correctCnt = correctCnt+1;
+            scoreAdd(handles);
         else
             pause(0.5);
             toggleCard(btn, hObject);
