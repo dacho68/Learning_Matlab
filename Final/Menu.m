@@ -59,7 +59,7 @@ handles.output = hObject;
 guidata(hObject, handles);
 
 % Show Logo
-h = imread('Logo.jpg');
+h = imread('Menu.jpg');
 axes(handles.axes1);
 imshow(h);
 
@@ -101,11 +101,3 @@ function pushbutton3_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 fprintf('Difficult\n');
 Difficult
-
-% --- Executes on button press in pushbutton4.
-function pushbutton4_Callback(hObject, eventdata, handles)
-% hObject    handle to pushbutton4 (see GCBO)
-% eventdata  reserved - to be defined in a future version of MATLAB
-% handles    structure with handles and user data (see GUIDATA)
-fprintf('Trap\n');
-Trap
