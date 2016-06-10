@@ -88,6 +88,8 @@ useCard = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 global prevBtn;
 global prevhObject;
+global correctCnt;
+correctCnt = 0;
 
 % UIWAIT makes Easy wait for user response (see UIRESUME)
 % uiwait(handles.figure1);
@@ -243,16 +245,23 @@ global isFirst;
 global useCard;
 global prevBtn;
 global prevhObject;
+global correctCnt;
+global puzzleAns;
 
 if useCard(btn)==0
     toggleCard(btn, hObject);
-    useCard(btn) = 1;
     
     if isFirst==1
         prevBtn = btn;
         prevhObject = hObject;
     else
-        
+        if puzzleAns(btn)==puzzleAns(prevBtn)
+            correctCnt = correctCnt+1;
+        else
+            pause(0.5);
+            toggleCard(btn, hObject);
+            toggleCard(prevBtn, prevhObject);
+        end
     end
     
     if isFirst==1
@@ -266,8 +275,9 @@ function toggleCard(btn, hObject)
 global useCard;
 global puzzleAns;
 if useCard(btn)==0
-    tmp = puzzleAns(btn);
+    set(hObject, 'String', puzzleAns(btn));
+    useCard(btn) = 1;
 else 
-    tmp = '?';
+    set(hObject, 'String', '?');
+    useCard(btn) = 0;
 end
-set(hObject, 'String', tmp);
